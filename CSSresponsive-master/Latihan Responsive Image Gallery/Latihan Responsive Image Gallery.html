@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Latihan Responsive Image Gallery </title>
+    </head>
+    <style class="screen">
+        *{
+    box-sizing : border-box;
+}
+[class*="col-"] {
+    float:left; padding: 15px; width: 100%;
+}
+
+@media only screen and (min-width: 600px){
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+
+    @media only screen and (min-width: 786px){
+    /* For dekstop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+.image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 20px double darkgrey;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.box{
+   text-align: center;
+}
+    </style>
+          <body>
+            <div class="container">
+                <h3>Image Gallery</h3>
+                
+                <div class="box col-3 col-s-6" >
+                    <img src="C:/Users/HP/Documents/css%20rensposive/img/kaido.jpg" class="image">
+                    <h2>Kaido</h2>
+                    <p>Soeharto adalah Yonko pertama</p>
+                </div>
+    
+                <div class="box col-3 col-s-6" >
+                    <img src="C:/Users/HP/Documents/css%20rensposive/img/BigMom.jpg" class="image">
+                    <h2>Bog Mom</h2>
+                    <p>Big Mom adalah Yonko kedua</p>
+                </div>
+                <div class="box col-3 col-s-6" >
+                    <img src="C:/Users/HP/Documents/css%20rensposive/img/shanks.jpg" class="image">
+                    <h2>Shanks</h2>
+                    <p>Shanks adalah Yonko ketiga</p>
+                </div>
+                <div class="box col-3 col-s-6" >
+                    <img src="C:/Users/HP/Documents/css%20rensposive/img/kurohige.jpg" class="image">
+                    <h2>Kurohige</h2>
+                    <p>Kurohige adalah Yonko ke empat</p>
+                </div>
+            </div>
+          </body>
+</html>

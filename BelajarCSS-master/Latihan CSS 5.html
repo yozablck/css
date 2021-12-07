@@ -1,0 +1,120 @@
+<html>
+
+<head>
+    <title> CSS Position dan Overflow</title>
+</head>
+<!--CSS-->
+<style media="screen">
+    .container {
+        width: 50%;
+        height: 200px;
+        overflow: auto;
+        margin-left: 0 auto;
+    }
+
+    .static {
+        position: stasic;
+        border: 2px solid green;
+    }
+
+    .relative {
+        position: relative;
+        border: 2px solid red;
+        left: 20px;
+        /*jarak dari posisi paling kiri sebesar 20px*/
+        right: 0px;
+        /*jarak dari posisi paling kanan sebesar 0px*/
+    }
+
+    .absolute {
+        position: absolute;
+        border: 2px solid blue;
+        left: 20px;
+        right: 0px;
+        bottom: 40px;
+    }
+
+    .fixed {
+        position: fixed;
+        border: 2px solid black;
+        bottom: 0;
+        right: 0;
+    }
+
+    .sticky {
+        position: sticky;
+        border: 2px solid yellow;
+        top: 0;
+        left: 20px;
+        background: darkblue;
+        color: white;
+    }
+</style>
+<!--HTML-->
+
+<body>
+    <div class="container">
+        <p class="sticky">
+            Ini adalah contoh dari posis sticky
+        </p>
+
+        <p class="static">
+            <b>Ini adalah contoh dari position static</b><br>
+            Ada seekor kura-kura yang sombong dan merasa dirinya lebih pantas terbang dibandingkan berenang di perairan.
+            Ia jengkel karena memiliki tempurung keras yang membuat tubuhnya terasa berat.
+            Ia pun kesal melihat kawan-kawannya sudah berpuas diri dengan berenang. Saat melihat burung yang bebas
+            terbang di langit,
+            kejengkelannya kian bertambah.
+            Suatu hari, kura-kura ini memaksa seekor angsa untuk membantunya terbang. Si angsa setuju.
+            Ia mengusulkan agar si kura-kura berpegangan pada sebatang kayu yang akan diangkatnya.
+            Karena tangan kura-kura agak lemah, ia menggunakan mulutnya yang lebih kuat. Ia pun akhirnya bisa terbang
+            dan merasa bangga.
+            Melihat teman-temannya yang tengah berenang, ia ingin menyombongkan diri.
+            Ia lupa bahwa mulutnya harus terus dipakai untuk menggigit kayu. Ia pun terjatuh dengan keras.
+            Beruntung, ia selamat berkat tempurung yang pernah dibencinya.
+        </p>
+
+        <p class="relative">
+            <b>Ini adalah contoh dari position relative</b><br>
+            Hiduplah seorang pria tua yang memiliki empat orang anak. Ia ingin anak-anaknya tidak menjadi manusia yang
+            terlalu cepat menghakimi sesuatu. Untuk itu, ia mengirimkan mereka untuk melihat pohon pir yang berada jauh
+            dari rumah mereka.
+
+            Masing-masing anak diminta pergi di musim berbeda, yakni musim dingin, semi, panas, dan gugur. Saat
+            keempatnya kembali, sang ayah bertanya tentang apa yang mereka lihat.
+
+            Anak pertama mengatakan pohon itu terlihat jelek, gundul, dan bengkok terkena angin. Sebaliknya, anak kedua
+            mengatakan pohon itu dipenuhi tunas dan terlihat menjanjikan. Lalu, anak ketiga mengatakan kalau pohon
+            tersebut dipenuhi bunga-bunga yang wangi. Terakhir, anak keempat mengatakan kalau si pohon memiliki banyak
+            buah yang terlihat nikmat.
+
+            Sang ayah menjelaskan kalau semua yang mereka lihat itu benar. Masing-masing dari mereka hanya melihat pohon
+            itu dalam satu musim saja. Ia lalu berujar, kalau mereka tidak boleh menilai pohon, apalagi manusia, hanya
+            dari satu sisi saja.
+
+
+        </p>
+        <p class="absolute">
+            <b>Ini adalah contoh dari position absolute</b><br>
+            Alkisah, ada seorang raja bernama Granada yang sedang mencari istri. Ia pun menggelar sebuah sayembara.
+            Barang siapa ingin menjadi istrinya, haruslah melihat ke dalam cermin ajaib yang mampu menunjukkan kebaikan
+            dan keburukannya semasa hidup.
+
+            Para wanita yang awalnya bersemangat ingin menjadi ratu langsung patah semangat mendengar persyaratan
+            tersebut. Mereka khawatir dan malu kalau semua orang akan mengetahui borok-borok mereka.
+
+            Hanya ada satu wanita yang berani mengajukan diri. Ia adalah seorang penggembala yang datang dari keluarga
+            menengah ke bawah. Bukan karena ia merasa tak pernah berbuat dosa. Namun menurutnya, semua orang pasti
+            pernah berbuat kesalahan. Selama mau memperbaiki diri, semuanya bisa dimaafkan.
+
+            Tanpa ragu dan takut, ia melihat ke dalam cermin tersebut. Setelah itu, raja mengatakan bahwa cermin itu
+            sebenarnya hanyalah cermin biasa. Ia hanya ingin menguji kepercayaan diri para wanita yang ada di sana. Pada
+            akhirnya, mereka pun menikah dan hidup bahagia selamanya.
+        </p>
+        <p class="fixed">
+            Ini adalah contoh dari position fixed   
+        </p>
+    </div>
+</body>
+
+</html>
